@@ -1,3 +1,5 @@
+package base;
+
 public class Frog {
     private String name;
     private int xPos;
@@ -46,7 +48,7 @@ public class Frog {
     }
 
     //TODO visit method moves frog to the location of the friend frog
-    // This method will take an argument of type Frog.  It will find the position of the
+    // This method will take an argument of type base.Frog.  It will find the position of the
     // frog and move to this position.  Returns no value.
 
     public void visit(Frog otherFrog){
@@ -67,8 +69,8 @@ public class Frog {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
-        Frog f1 = new Frog("Freddy",3,4);	// create an instance of Frog
-        f1.eatFly();						// call Frog methods
+        Frog f1 = new Frog("Freddy",3,4);	// create an instance of base.Frog
+        f1.eatFly();						// call base.Frog methods
         f1.moveNorth();
         System.out.println(f1);
 
